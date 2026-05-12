@@ -1,4 +1,4 @@
-# wrangler.toml
+#wrangler.toml
 name = "zulkarnain-wall"
 main = "worker.js"
 compatibility_date = "2025-01-01"
