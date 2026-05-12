@@ -1,0 +1,6 @@
+name = "zulkarnain-wall"
+main = "worker.js"
+compatibility_date = "2025-01-01"
+
+[env.production]
+route = "zulkarnain-wall.pages.dev/*"
