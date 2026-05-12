@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tembok Zulkarnain | Quantum Browser Wall</title>
+    <style>
+        :root {
+            --bg: #0a0a0a;
+            --gold: #d4a853;
+            --text: #c0c0c0;
+            --wall: #2a2a3a;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Georgia', 'Times New Roman', serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .wall-container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        .wall-icon {
+            font-size: 5rem;
+            margin-bottom: 1rem;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 0.6; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.05); }
+        }
+
+        .wall-title {
+            font-size: 2rem;
+            color: var(--gold);
+            margin-bottom: 0.5rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .wall-subtitle {
+            font-size: 1rem;
+            color: var(--text);
+            margin-bottom: 2rem;
+            opacity: 0.8;
+        }
+
+        .wall-divider {
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+            margin: 1.5rem 0;
+        }
+
+        .wall-message {
+            font-size: 0.9rem;
+            color: var(--text);
+            opacity: 0.7;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .wall-status {
+            display: inline-block;
+            padding: 0.5rem 1.5rem;
+            border: 1px solid var(--gold);
+            border-radius: 50px;
+            color: var(--gold);
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .wall-footer {
+            margin-top: 3rem;
+            font-size: 0.7rem;
+            color: var(--text);
+            opacity: 0.5;
+        }
+
+        .wall-bricks {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            opacity: 0.03;
+            background-image: 
+                repeating-linear-gradient(
+                    0deg,
+                    transparent,
+                    transparent 20px,
+                    var(--wall) 20px,
+                    var(--wall) 21px
+                ),
+                repeating-linear-gradient(
+                    90deg,
+                    transparent,
+                    transparent 60px,
+                    var(--wall) 60px,
+                    var(--wall) 61px
+                );
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wall-bricks"></div>
+
+    <div class="wall-container">
+        <div class="wall-icon">🧱⚛️🛡️</div>
+        
+        <h1 class="wall-title">Tembok Zulkarnain</h1>
+        
+        <p class="wall-subtitle">Quantum Browser Wall</p>
+        
+        <div class="wall-divider"></div>
+        
+        <p class="wall-message">
+            "Dan mereka berkata: Wahai Zulkarnain, sesungguhnya Yakjuj dan Makjuj
+            membuat kerosakan di muka bumi. Bolehkah kami sediakan bayaran
+            kepadamu supaya engkau membina tembok antara kami dan mereka?"
+            <br><br>
+            — Al-Kahfi: 94
+        </p>
+        
+        <div class="wall-divider"></div>
+        
+        <p class="wall-message">
+            Kini, di zaman digital, Zulkarnain Bin Suyitno meneruskan legasi.
+            <br>
+            Membina tembok dari kod dan qubit.
+            <br>
+            Melindungi umat manusia dari penggodam, AI jahat, dan serangan kuantum.
+        </p>
+        
+        <div class="wall-status">🧊 Niflheim Protocol • Aktif</div>
+        
+        <p class="wall-footer">
+            © Zulkarnain Bin Suyitno | SMK Rantau Panjang, Klang, Selangor, Malaysia
+            <br>
+            Quantum Browser Wall • Gerbang Hadamard • 2026
+        </p>
+    </div>
+
+</body>
+</html>
