@@ -1,5 +1,5 @@
 // worker.js
-// Tembok Zulkarnain — Niflheim Protocol
+// Tembok Zulkarnain — Niflheim Protocols
 // Worker: zulkarnain-wall.khairuldinsuyitno.workers.dev
 
 export default {
