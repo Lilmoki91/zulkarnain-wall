@@ -2,7 +2,8 @@
 
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "azura-ai",
+  "name": "// wrangler.jsonc",
+"name": "zulkarnain-wall",
   "compatibility_date": "2025-09-27",
   "observability": {
     "enabled": true
