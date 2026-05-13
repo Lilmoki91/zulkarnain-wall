@@ -1,4 +1,4 @@
-from flask import Flask, request, redirect, make_response
+from flask import Flask, request, redirect
 import os
 
 app = Flask(__name__)
@@ -12,7 +12,7 @@ def guard():
     if user_token and user_token == STASIS_UNLOCK_TOKEN:
         return redirect('https://zulkarnain-wall.pages.dev/')
     
-    return '''
+    return f'''
     <!DOCTYPE html>
     <html lang="ms">
     <head>
@@ -20,8 +20,8 @@ def guard():
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Log Masuk - Tembok Zulkarnain</title>
         <style>
-            body { background:#0a0a0a; color:#c0c0c0; font-family:Georgia,serif; text-align:center; padding:2rem; }
-            h1 { color:#d4a853; }
+            body {{ background:#0a0a0a; color:#c0c0c0; font-family:Georgia,serif; text-align:center; padding:2rem; }}
+            h1 {{ color:#d4a853; }}
         </style>
     </head>
     <body>
@@ -29,16 +29,16 @@ def guard():
         <h2>Tembok Zulkarnain</h2>
         <p>Sila log masuk untuk membuka kunci.</p>
         <script async src="https://telegram.org/js/telegram-widget.js?22" 
-            data-telegram-login="azura_ai_webbot" 
+            data-telegram-login="zulkarnain_wall_bot" 
             data-size="large" 
             data-onauth="onTelegramAuth(user)" 
             data-request-access="write">
         </script>
         <script>
-            function onTelegramAuth(user) {
-                document.cookie = "zulkarnain_stasis_token=''' + STASIS_UNLOCK_TOKEN + '''; path=/; max-age=86400; Secure; SameSite=Strict; domain=zulkarnain-wall.pages.dev";
+            function onTelegramAuth(user) {{
+                document.cookie = "zulkarnain_stasis_token={STASIS_UNLOCK_TOKEN}; path=/; max-age=86400; Secure; SameSite=Strict";
                 window.location.href = 'https://zulkarnain-wall.pages.dev/';
-            }
+            }}
         </script>
     </body>
     </html>
