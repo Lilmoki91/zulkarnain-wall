@@ -1,5 +1,3 @@
-#wrangler.toml
 name = "zulkarnain-wall"
-main = "worker.js"
+main = "functions/worker.js"
 compatibility_date = "2025-01-01"
-command = "deploy"
