@@ -1,4 +1,4 @@
-# CUBAAN DEPLOY TO PAGES
+
 name: Deploy to Cloudflare Pages
 on:
   push:
