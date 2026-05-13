@@ -1,4 +1,4 @@
-// functions/[[path]].js
+// functions/[[path]].js!
 // Tembok Zulkarnain — Niflheim Protocol (Pages Functions)
 
 export async function onRequest(context) {
