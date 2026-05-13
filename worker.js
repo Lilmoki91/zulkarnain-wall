@@ -1,5 +1,5 @@
 // functions/worker.js
-// Tembok Zulkarnain — Niflheim Protocol (Pages Functions)
+// Tembok Zulkarnain — Niflheim Protocols (Pages Functions)
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
