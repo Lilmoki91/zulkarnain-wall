@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kunci Tembok Zulkarnain</title>
+    <style>
+        body { background: #0a0a0a; color: #c0c0c0; font-family: 'Georgia', serif; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; }
+        .container { text-align: center; padding: 2rem; }
+        button { padding: 1rem 2rem; font-size: 1.2rem; background: #d4a853; color: #0a0a0a; border: none; border-radius: 50px; cursor: pointer; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧱⚛️🛡️</h1>
+        <p>Klik butang di bawah untuk menyimpan kunci, kemudian pergi ke Tembok Zulkarnain.</p>
+        <button onclick="simpanKunci()">🔑 Simpan Kunci & Buka Tembok</button>
+    </div>
+    <script>
+        function simpanKunci() {
+            document.cookie = "zulkarnain_stasis_token=tembok_zulkarnain_2026; path=/; max-age=86400; Secure; SameSite=Strict";
+            window.location.href = 'https://zulkarnain-wall.pages.dev/';
+        }
+    </script>
+</body>
+</html>
