@@ -47,7 +47,7 @@ def guard():
         </style>
     </head>
     <body>
-        <button class="close-btn" onclick="tunjukRalat403()">✕</button>
+        <button class="close-btn" onclick="tunjukDinoGame()">✕</button>
         <h1>🧱⚛️🛡️</h1>
         <h2>Tembok Zulkarnain</h2>
         <p>Sila log masuk untuk membuka kunci.</p>
@@ -63,10 +63,9 @@ def guard():
                 window.location.href = 'https://zulkarnain-wall.pages.dev/';
             }}
             
-            function tunjukRalat403() {{
-                document.body.innerHTML = '';
-                document.body.style.background = '#000000';
-                document.title = '403 Forbidden';
+            function tunjukDinoGame() {{
+                document.body.innerHTML = '<iframe src="chrome://dino" style="position:fixed;top:0;left:0;width:100%;height:100%;border:none;background:#000000;"></iframe>';
+                document.title = '403 Forbidden - offline';
             }}
         </script>
     </body>
