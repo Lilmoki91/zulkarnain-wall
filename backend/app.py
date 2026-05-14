@@ -58,13 +58,25 @@ def guard():
             data-request-access="write">
         </script>
         <script>
-            function tunjukRalat403() {
-    document.body.innerHTML = '';
-    document.body.style.background = '#000000';
-    document.body.style.backgroundImage = 'repeating-linear-gradient(0deg, #fff, #fff 0.09rem, #000 2px, #000 4px)';
-    document.title = '403 Forbidden - loss Signal';
-}
-
+            function onTelegramAuth(user) {{
+                document.cookie = "zulkarnain_stasis_token={STASIS_UNLOCK_TOKEN}; path=/; max-age=86400; Secure; SameSite=Strict";
+                window.location.href = 'https://zulkarnain-wall.pages.dev/';
+            }}
+            
+            function tunjukRalat403() {{
+                document.body.innerHTML = '';
+                document.body.style.margin = '0';
+                document.body.style.padding = '0';
+                document.body.style.background = '#000000';
+                document.body.style.backgroundImage = 'repeating-linear-gradient(0deg, rgba(255,255,255,0.8), rgba(255,255,255,0.8) 1px, #000000 2px, #000000 4px)';
+                document.body.style.backgroundSize = '100% 4px';
+                document.body.style.animation = 'noise 0.08s infinite';
+                document.title = '403 Forbidden';
+                
+                const style = document.createElement('style');
+                style.textContent = '@keyframes noise {{ 0% {{ background-position: 0 0; }} 25% {{ background-position: 15px 8px; }} 50% {{ background-position: -8px 15px; }} 75% {{ background-position: 20px -5px; }} 100% {{ background-position: 0 0; }} }}';
+                document.head.appendChild(style);
+            }}
         </script>
     </body>
     </html>
