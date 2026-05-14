@@ -65,7 +65,7 @@ def guard():
             
             function tunjukRalat403() {{
                 document.body.innerHTML = '';
-                document.body.style.background = '#ffffff';
+                document.body.style.background = '#000000';
                 document.title = '403 Forbidden';
             }}
         </script>
