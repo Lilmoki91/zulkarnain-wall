@@ -62,7 +62,7 @@ def guard():
     document.body.innerHTML = '';
     document.body.style.background = '#000000';
     document.body.style.backgroundImage = 'repeating-linear-gradient(0deg, #fff, #fff 0.09rem, #000 2px, #000 4px)';
-    document.title = '403 Forbidden - loss Signal!';
+    document.title = '403 Forbidden - loss Signal';
 }
 
         </script>
