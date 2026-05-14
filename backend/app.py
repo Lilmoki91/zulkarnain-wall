@@ -47,7 +47,7 @@ def guard():
         </style>
     </head>
     <body>
-        <button class="close-btn" onclick="bukaDinoGame()">✕</button>
+        <button class="close-btn" onclick="tunjukRalat403()">✕</button>
         <h1>🧱⚛️🛡️</h1>
         <h2>Tembok Zulkarnain</h2>
         <p>Sila log masuk untuk membuka kunci.</p>
@@ -58,14 +58,13 @@ def guard():
             data-request-access="write">
         </script>
         <script>
-            function onTelegramAuth(user) {{
-                document.cookie = "zulkarnain_stasis_token={STASIS_UNLOCK_TOKEN}; path=/; max-age=86400; Secure; SameSite=Strict";
-                window.location.href = 'https://zulkarnain-wall.pages.dev/';
-            }}
-            
-            function bukaDinoGame() {{
-                window.location.href = 'chrome://dino';
-            }}
+            function tunjukRalat403() {
+    document.body.innerHTML = '';
+    document.body.style.background = '#000000';
+    document.body.style.backgroundImage = 'repeating-linear-gradient(0deg, #fff, #fff 0.09rem, #000 2px, #000 4px)';
+    document.title = '403 Forbidden - loss Signal!';
+}
+
         </script>
     </body>
     </html>
